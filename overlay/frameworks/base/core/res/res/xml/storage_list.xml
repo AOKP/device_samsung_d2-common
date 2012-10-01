@@ -46,7 +46,7 @@
              android:removable="false"
              android:emulated="true"
              android:mtpReserve="100"
-             android:allowMassStorage="false" />
+             android:allowMassStorage="true" />
 
     <storage android:mountPoint="/mnt/usbdisk"
              android:storageDescription="@string/storage_usb"
