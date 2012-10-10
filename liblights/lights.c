@@ -245,6 +245,8 @@ static int set_light_leds(struct light_state_t const *state, int type)
     }
 
     led->color = state->color & 0x00ffffff;
+    if (led->color == 0x00ffffff)
+        led->color = 0x80ff80;
 
     if (led->color > 0) {
         /* This LED is lit. */
