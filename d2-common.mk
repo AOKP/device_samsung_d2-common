@@ -67,6 +67,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
+# QC composition
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=gpu
+
 # QRNGD
 PRODUCT_PACKAGES += qrngd
 
