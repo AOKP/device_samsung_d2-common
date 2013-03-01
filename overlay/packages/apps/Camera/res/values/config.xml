@@ -25,4 +25,5 @@
     <bool name="needsEarlyVideoSize">true</bool>
     <bool name="noFaceDetectOnFrontCamera">true</bool>
     <bool name="enableZSL">true</bool>
+    <bool name="wantsFocusModes">true</bool>
 </resources>
