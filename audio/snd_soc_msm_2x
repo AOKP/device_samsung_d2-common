@@ -2793,8 +2793,8 @@ SectionDevice
         'RX5 MIX1 INP1':0:RX1
         'RX5 MIX1 INP2':0:RX2
         'RX6 DSM MUX':0:DSM_INV
-        'LINEOUT2 Volume':1:80%
-        'LINEOUT4 Volume':1:80%
+        'LINEOUT2 Volume':1:100%
+        'LINEOUT4 Volume':1:100%
         'RX5 Digital Volume':1:65%
     EndSequence
 
