@@ -72,6 +72,7 @@ lib/libqcci_legacy.so
 lib/libqmi_client_qmux.so
 
 # GPS
+lib/libgeofence.so
 lib/libloc_api_v02.so
 
 # NFC
