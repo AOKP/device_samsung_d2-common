@@ -21,7 +21,6 @@
     <!-- Samsung Camcorder Mode -->
     <bool name="needsSamsungCamMode">true</bool>
     <!-- Samsung Camera Settings -->
-    <bool name="hasSamsungCamSettings">true</bool>
     <bool name="needsEarlyVideoSize">true</bool>
     <bool name="noFaceDetectOnFrontCamera">true</bool>
     <bool name="enableZSL">true</bool>
