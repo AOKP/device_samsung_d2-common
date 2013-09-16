@@ -124,6 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lpa.decode=true \
     rild.libpath=/system/lib/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
+    ro.ril.svdo=true \
     media.aac_51_output_enabled=true \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
