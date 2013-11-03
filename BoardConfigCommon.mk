@@ -104,3 +104,6 @@ BOARD_SEPOLICY_UNION += \
         thermald.te \
         ueventd.te \
         wpa_supplicant.te 
+
+# Use device specific camera
+USE_DEVICE_SPECIFIC_CAMERA := true
