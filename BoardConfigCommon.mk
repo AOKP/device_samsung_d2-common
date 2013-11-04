@@ -73,6 +73,8 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_BSP_CAMERA_ABI_HACK
 BOARD_USES_SEPERATED_VOIP := true
 
 # SELinux
+TARGET_USE_SELINUX := false
+ifneq ($(TARGET_USE_SELINUX),false)
 BOARD_SEPOLICY_DIRS += \
         device/samsung/d2-common/sepolicy
 
@@ -104,6 +106,8 @@ BOARD_SEPOLICY_UNION += \
         thermald.te \
         ueventd.te \
         wpa_supplicant.te 
+endif
 
 # Use device specific camera
 USE_DEVICE_SPECIFIC_CAMERA := true
+USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
