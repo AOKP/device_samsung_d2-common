@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/samsung/d2-common/d2-common-vendor.mk)
 
 ## overlays
-#DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
