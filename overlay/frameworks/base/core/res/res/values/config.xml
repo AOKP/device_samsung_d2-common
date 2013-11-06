@@ -282,6 +282,9 @@
     
     <bool name="config_enableWifiDisplay">true</bool>
 
+    <!-- Translucend lockscreen -->
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
     <!-- ########### AOKP configs ############ -->
     
     <!-- Workaround for devices with broken keyboards
