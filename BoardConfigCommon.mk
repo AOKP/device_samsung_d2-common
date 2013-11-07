@@ -110,4 +110,3 @@ endif
 
 # Use device specific camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
