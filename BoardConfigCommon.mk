@@ -72,6 +72,12 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_BSP_CAMERA_ABI_HACK
 # Separate audio devices for VOIP
 BOARD_USES_SEPERATED_VOIP := true
 
+# Use device specific camera
+USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Battery capacity path is not default 
+USE_DEVICE_SPECIFIC_LIBHEALTHD := true
+
 # SELinux
 TARGET_USE_SELINUX := false
 ifneq ($(TARGET_USE_SELINUX),false)
@@ -108,5 +114,3 @@ BOARD_SEPOLICY_UNION += \
         wpa_supplicant.te 
 endif
 
-# Use device specific camera
-USE_DEVICE_SPECIFIC_CAMERA := true
