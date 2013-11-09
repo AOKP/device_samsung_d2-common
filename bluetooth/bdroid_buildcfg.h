@@ -19,5 +19,7 @@
 #define _BDROID_BUILDCFG_H
 
 #define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S III"
+// Enables Interleave scan
+#define BTA_HOST_INTERLEAVE_SEARCH TRUE
 
 #endif
