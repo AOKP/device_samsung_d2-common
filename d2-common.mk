@@ -115,6 +115,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.speaker.location=high \
     ro.qc.sdk.audio.fluencetype=fluence \
     persist.timed.enable=true \
+    persist.fuse_sdcard=true \
     ro.emmc.sdcard.partition=17 \
     ro.use_data_netmgrd=true \
     persist.data_netmgrd_nint=16 \
