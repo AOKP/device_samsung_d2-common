@@ -81,16 +81,3 @@ USE_DEVICE_SPECIFIC_LIBHEALTHD := true
 # VectorImpl Symbols required for legacy HALs
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
-# SELinux
-TARGET_USE_SELINUX := false
-ifneq ($(TARGET_USE_SELINUX),false)
-BOARD_SEPOLICY_DIRS += \
-        device/samsung/d2-common/sepolicy
-
-# The list below is order dependent
-BOARD_SEPOLICY_UNION := \
-       device.te \
-       app.te \
-       file_contexts
-endif
-
