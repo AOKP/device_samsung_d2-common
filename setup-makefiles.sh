@@ -34,10 +34,10 @@ for FILE in `egrep -v '(^#|^$)' ../$DEVICE/device-proprietary-files.txt`; do
 done
 
 LINEEND=" \\"
-COUNT=`wc -l ../d2-common/common-proprietary-files.txt | awk {'print $1'}`
-DISM=`egrep -c '(^#|^$)' ../d2-common/common-proprietary-files.txt`
+COUNT=`wc -l ../d2/proprietary-files.txt | awk {'print $1'}`
+DISM=`egrep -c '(^#|^$)' ../d2/proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
-for FILE in `egrep -v '(^#|^$)' ../d2-common/common-proprietary-files.txt`; do
+for FILE in `egrep -v '(^#|^$)' ../d2/proprietary-files.txt`; do
   COUNT=`expr $COUNT - 1`
   if [ $COUNT = "0" ]; then
     LINEEND=""
