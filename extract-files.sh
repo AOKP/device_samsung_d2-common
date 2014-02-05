@@ -34,7 +34,7 @@ for FILE in `egrep -v '(^#|^$)' ../$DEVICE/device-proprietary-files.txt`; do
   fi
 done
 
-for FILE in `egrep -v '(^#|^$)' ../d2-common/common-proprietary-files.txt`; do
+for FILE in `egrep -v '(^#|^$)' ../d2/proprietary-files.txt`; do
   echo "Extracting /system/$FILE ..."
   DIR=`dirname $FILE`
   if [ ! -d $BASE/$DIR ]; then
@@ -47,4 +47,4 @@ for FILE in `egrep -v '(^#|^$)' ../d2-common/common-proprietary-files.txt`; do
   fi
 done
 
-./../d2-common/setup-makefiles.sh
+./../d2/setup-makefiles.sh
